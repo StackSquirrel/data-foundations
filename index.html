@@ -21,7 +21,7 @@ layout: default
                         <strong>Contact:</strong> {{ pet.contact }} <br>
                         <strong>Location:</strong> {{ pet.location }}
                     </p>
-                    <a href="#" class="btn btn-primary" style="background-color:{% if pet.type contains 'dog' %}purple{% elsif pet.type contains 'cat' %}yellow{% else %}green{% endif %}">{% if pet.contact contains '@' %}Email{% else %}Call{% endif %} {{pet.owner}} to rent!</a>
+                    <a href="#" class="btn btn-primary" style="background-color:{% if pet.type contains 'dog' %}purple{% elsif pet.type contains 'cat' %}red{% else %}green{% endif %}">{% if pet.contact contains '@' %}Email{% else %}Call{% endif %} {{pet.owner}} to rent!</a>
 
                 </div>
             </div>
