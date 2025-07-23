@@ -4,6 +4,7 @@ layout: default
 ---
 
 {% assign pets = site.data.pets %}
+<h3>Pets available: {{ pets.size }} ({{ pets | where: 'type', 'dog' | size }} dogs, {{ pets | where: 'type', 'cat' | size }} cats, and{{ pets | where: 'type', 'parrot' | size }} parrots).</h3>
 
 <div class="container my-4">
     <div class="row">
